@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorLink | Manager Registration</title>
+</head>
+<body>
+  <header>
+    <h1>TutorLink</h1>
+    <p>Create a manager account to manage the tutoring platform.</p>
+    <nav>
+      <a href="manager-login.html">Login</a> |
+      <a href="manager-profile.html">Manager Profile</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h2>Manager Registration</h2>
+
+    <form action="manager-login.html" method="get">
+      <p>
+        <label for="fullname">Full name:</label><br>
+        <input type="text" id="fullname" name="fullname" required>
+      </p>
+
+      <p>
+        <label for="email">Email address:</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
+
+      <p>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"
+               minlength="8" required>
+      </p>
+
+      <p>
+        <label for="confirm-password">Confirm password:</label><br>
+        <input type="password" id="confirm-password"
+               name="confirm_password" minlength="8" required>
+      </p>
+
+      <p>
+        <label for="phone">Phone number:</label><br>
+        <input type="tel" id="phone" name="phone" required>
+      </p>
+
+      <p>
+        <label for="employee-id">Employee ID:</label><br>
+        <input type="text" id="employee-id" name="employee_id" required>
+      </p>
+
+      <p>
+        <label for="department">Department:</label><br>
+        <select id="department" name="department" required>
+          <option value="">Select department</option>
+          <option value="student-management">Student Management</option>
+          <option value="tutor-management">Tutor Management</option>
+          <option value="booking-management">Booking Management</option>
+          <option value="payment-management">Payment Management</option>
+          <option value="support">Customer Support</option>
+        </select>
+      </p>
+
+      <p>
+        <button type="submit">Create Manager Account</button>
+        <button type="reset">Clear</button>
+      </p>
+    </form>
+
+    <p>
+      Already have an account?
+      <a href="manager-login.html">Login here</a>
+    </p>
+
+    <p>
+      <small>
+        HTML prototype only. Manager registration will require
+        PHP validation and database storage later.
+      </small>
+    </p>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 TutorLink</p>
+  </footer>
+</body>
+</html>

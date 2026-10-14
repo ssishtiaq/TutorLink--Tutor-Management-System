@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TutorLink | Admin Registration</title>
+</head>
+<body>
+
+  <h1>TutorLink</h1>
+  <p>Create an admin account to manage the platform.</p>
+  <a href="admin-login.html">Login</a> | <a href="index.html">Admin Dashboard</a>
+  <hr>
+
+  <h2>Admin Registration</h2>
+
+  <form action="admin-login.html">
+    <p>
+      Full name:<br>
+      <input type="text" name="fullname" required>
+    </p>
+
+    <p>
+      Email address:<br>
+      <input type="email" name="email" required>
+    </p>
+
+    <p>
+      Password:<br>
+      <input type="password" name="password" required>
+    </p>
+
+    <p>
+      Confirm password:<br>
+      <input type="password" name="confirm_password" required>
+    </p>
+
+    <p>
+      Admin ID:<br>
+      <input type="text" name="admin_id" required>
+    </p>
+
+    <p>
+      Department:<br>
+      <select name="department" required>
+        <option value="">Select department</option>
+        <option value="user-management">User Management</option>
+        <option value="academic">Academic Affairs</option>
+        <option value="finance">Finance</option>
+        <option value="it-support">IT Support</option>
+      </select>
+    </p>
+
+    <p>
+      Admin level:<br>
+      <select name="admin_level" required>
+        <option value="">Select level</option>
+        <option value="super">Super Admin</option>
+        <option value="senior">Senior Admin</option>
+        <option value="junior">Junior Admin</option>
+      </select>
+    </p>
+
+    <p>
+      Date of joining:<br>
+      <input type="date" name="joining_date" required>
+    </p>
+
+    <p>
+      Office phone:<br>
+      <input type="tel" name="office_phone" required>
+    </p>
+
+    <p>
+      Responsibilities:<br>
+      <textarea name="responsibilities" rows="3" cols="35"></textarea>
+    </p>
+
+    <p>
+      <button type="submit">Create Admin Account</button>
+      <button type="reset">Clear</button>
+    </p>
+  </form>
+
+  <hr>
+  <p>&copy; 2026 TutorLink</p>
+
+</body>
+</html>

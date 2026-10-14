@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TutorLink | Admin Profile</title>
+</head>
+<body>
+
+  <h1>TutorLink</h1>
+  <a href="index.html">Dashboard</a> | <a href="admin-profile.html">My Profile</a>
+  <hr>
+
+  <h2>My Admin Profile</h2>
+
+  <form action="admin-profile.html">
+    <p>
+      Full name:
+      <input type="text" name="fullname" required>
+    </p>
+
+    <p>
+      Email address:
+      <input type="email" name="email" required>
+    </p>
+
+    <p>
+      Admin ID:
+      <input type="text" name="admin_id">
+    </p>
+
+    <p>
+      Department:
+      <select name="department">
+        <option value="">Select department</option>
+        <option value="user-management">User Management</option>
+        <option value="academic">Academic Affairs</option>
+        <option value="finance">Finance</option>
+        <option value="it-support">IT Support</option>
+      </select>
+    </p>
+
+    <p>
+      Admin level:
+      <input type="text" name="admin_level">
+    </p>
+
+    <p>
+      Date of joining:
+      <input type="date" name="joining_date">
+    </p>
+
+    <p>
+      Office phone:
+      <input type="tel" name="office_phone">
+    </p>
+
+    <p>
+      Responsibilities:<br>
+      <textarea name="responsibilities" rows="3" cols="40"></textarea>
+    </p>
+
+    <button type="submit">Save Changes</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <hr>
+  <p>&copy; 2026 TutorLink Admin Portal</p>
+
+</body>
+</html>

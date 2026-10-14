@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorLink | Student Profile</title>
+</head>
+<body>
+  <header>
+    <h1>TutorLink</h1>
+    <nav aria-label="Student navigation">
+      <a href="index.html">Dashboard</a> |
+      <a href="find-tutors.html">Find Tutors</a> |
+      <a href="my-bookings.html">My Bookings</a> |
+      <a href="student-profile.html">My Profile</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h2>My Student Profile</h2>
+    <form action="student-profile.html" method="get">
+      <p>
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="fullname" value="Student Name" required>
+      </p>
+      <p>
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" value="student@example.com" required>
+      </p>
+      <p>
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+      </p>
+      <p>
+        <label for="level">Education level:</label>
+        <select id="level" name="level">
+          <option value="school">School</option>
+          <option value="college" selected>College</option>
+          <option value="university">University</option>
+        </select>
+      </p>
+      <p>
+        <label for="interests">Subjects of interest:</label><br>
+        <textarea id="interests" name="interests" rows="3" cols="40">Mathematics, Programming</textarea>
+      </p>
+      <p>
+        <label for="learning">Learning preference:</label>
+        <select id="learning" name="learning">
+          <option value="online" selected>Online</option>
+          <option value="in-person">In person</option>
+          <option value="both">Both</option>
+        </select>
+      </p>
+      <button type="submit">Save Changes</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+
+  <footer><hr><p>&copy; 2026 TutorLink Student Portal</p></footer>
+</body>
+</html>

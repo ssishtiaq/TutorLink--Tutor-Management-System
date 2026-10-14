@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorLink | Manager Profile</title>
+</head>
+<body>
+  <header>
+    <h1>TutorLink</h1>
+    <nav aria-label="Manager navigation">
+      <a href="manager-dashboard.html">Dashboard</a> |
+      <a href="manager-profile.html">My Profile</a> |
+      <a href="manager-login.html">Log Out</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h2>My Manager Profile</h2>
+
+    <form action="manager-profile.html" method="get">
+      <p>
+        <label for="fullname">Full name:</label><br>
+        <input type="text" id="fullname" name="fullname"
+               value="Manager Name" required>
+      </p>
+
+      <p>
+        <label for="email">Email address:</label><br>
+        <input type="email" id="email" name="email"
+               value="manager@example.com" required>
+      </p>
+
+      <p>
+        <label for="phone">Phone number:</label><br>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter phone number">
+      </p>
+
+      <p>
+        <label for="employee-id">Employee ID:</label><br>
+        <input type="text" id="employee-id" name="employee_id"
+               value="TL-M001" required>
+      </p>
+
+      <p>
+        <label for="role">Management role:</label><br>
+        <select id="role" name="role">
+          <option value="administrator">Administrator</option>
+          <option value="operations" selected>Operations Manager</option>
+          <option value="support">Support Manager</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="department">Department:</label><br>
+        <select id="department" name="department">
+          <option value="student-management">Student Management</option>
+          <option value="tutor-management" selected>Tutor Management</option>
+          <option value="booking-management">Booking Management</option>
+          <option value="payment-management">Payment Management</option>
+          <option value="support">Customer Support</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="address">Office address:</label><br>
+        <textarea id="address" name="address"
+                  rows="3" cols="35">TutorLink Office</textarea>
+      </p>
+
+      <p>
+        <button type="submit">Save Changes</button>
+        <button type="reset">Reset</button>
+      </p>
+    </form>
+
+    <p>
+      <small>
+        This form is a static HTML example. Profile changes
+        will not update a database until PHP is implemented.
+      </small>
+    </p>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 TutorLink Manager Portal</p>
+  </footer>
+</body>
+</html>

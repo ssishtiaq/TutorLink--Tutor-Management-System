@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TutorLink | Teacher Registration</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>TutorLink</h1>
+
+        <p>Private Tutoring Management Platform</p>
+
+        <nav>
+
+            <a href="index.html">Student Login</a> |
+
+            <a href="teacher-login.html">Teacher Login</a> |
+
+            <a href="manager-login.html">Manager Login</a>
+
+        </nav>
+
+        <hr>
+
+    </header>
+
+    <main>
+
+        <h2>Teacher Registration</h2>
+
+        <p>
+
+            Create your teacher account and join TutorLink
+
+            to connect with students.
+
+        </p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <p>
+
+                    <label for="fullname">Full Name:</label><br>
+
+                    <input type="text" id="fullname"
+
+                           name="fullname" required>
+
+                </p>
+
+                <p>
+
+                    <label for="email">Email Address:</label><br>
+
+                    <input type="email" id="email"
+
+                           name="email" required>
+
+                </p>
+
+                <p>
+
+                    <label for="phone">Phone Number:</label><br>
+
+                    <input type="tel" id="phone"
+
+                           name="phone" required>
+
+                </p>
+
+                <p>
+
+                    <label for="gender">Gender:</label><br>
+
+                    <select id="gender" name="gender" required>
+
+                        <option value="">Select Gender</option>
+
+                        <option value="male">Male</option>
+
+                        <option value="female">Female</option>
+
+                        <option value="other">Other</option>
+
+                        <option value="prefer-not-to-say">
+
+                            Prefer not to say
+
+                        </option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="address">Address:</label><br>
+
+                    <textarea id="address" name="address"
+
+                              rows="3" cols="30" required></textarea>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Account Information</legend>
+
+                <p>
+
+                    <label for="password">Password:</label><br>
+
+                    <input type="password" id="password"
+
+                           name="password" minlength="8" required>
+
+                </p>
+
+                <p>
+
+                    <label for="confirm-password">
+
+                        Confirm Password:
+
+                    </label><br>
+
+                    <input type="password" id="confirm-password"
+
+                           name="confirm_password"
+
+                           minlength="8" required>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Teaching Information</legend>
+
+                <p>
+
+                    <label for="qualification">
+
+                        Highest Qualification:
+
+                    </label><br>
+
+                    <select id="qualification"
+
+                            name="qualification" required>
+
+                        <option value="">Select Qualification</option>
+
+                        <option value="hsc">HSC</option>
+
+                        <option value="bachelors">
+
+                            Bachelor's Degree
+
+                        </option>
+
+                        <option value="masters">
+
+                            Master's Degree
+
+                        </option>
+
+                        <option value="phd">PhD</option>
+
+                        <option value="other">Other</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="institution">
+
+                        University / Institution:
+
+                    </label><br>
+
+                    <input type="text" id="institution"
+
+                           name="institution" required>
+
+                </p>
+
+                <p>
+
+                    <label for="subject">Teaching Subject:</label><br>
+
+                    <select id="subject" name="subject" required>
+
+                        <option value="">Select Subject</option>
+
+                        <option value="mathematics">Mathematics</option>
+
+                        <option value="physics">Physics</option>
+
+                        <option value="chemistry">Chemistry</option>
+
+                        <option value="biology">Biology</option>
+
+                        <option value="english">English</option>
+
+                        <option value="ict">ICT / Computer Science</option>
+
+                        <option value="accounting">Accounting</option>
+
+                        <option value="other">Other</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="experience">
+
+                        Teaching Experience (Years):
+
+                    </label><br>
+
+                    <input type="number" id="experience"
+
+                           name="experience" min="0" max="60" required>
+
+                </p>
+
+                <p>
+
+                    <label for="class-level">
+
+                        Preferred Student Level:
+
+                    </label><br>
+
+                    <select id="class-level"
+
+                            name="class_level" required>
+
+                        <option value="">Select Level</option>
+
+                        <option value="primary">Primary School</option>
+
+                        <option value="secondary">Secondary School</option>
+
+                        <option value="higher-secondary">
+
+                            Higher Secondary
+
+                        </option>
+
+                        <option value="university">University</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="teaching-mode">
+
+                        Teaching Mode:
+
+                    </label><br>
+
+                    <select id="teaching-mode"
+
+                            name="teaching_mode" required>
+
+                        <option value="">Select Teaching Mode</option>
+
+                        <option value="online">Online</option>
+
+                        <option value="offline">In Person</option>
+
+                        <option value="both">Both</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="hourly-rate">
+
+                        Expected Hourly Rate (BDT):
+
+                    </label><br>
+
+                    <input type="number" id="hourly-rate"
+
+                           name="hourly_rate" min="0" required>
+
+                </p>
+
+                <p>
+
+                    <label for="bio">About Yourself:</label><br>
+
+                    <textarea id="bio" name="bio"
+
+                              rows="5" cols="35"
+
+                              placeholder="Describe your teaching skills and experience..."
+
+                              required></textarea>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <p>
+
+                <input type="checkbox" id="terms"
+
+                       name="terms" value="accepted" required>
+
+                <label for="terms">
+
+                    I confirm that the information provided is correct.
+
+                </label>
+
+            </p>
+
+            <p>
+
+                <button type="submit">Register as Teacher</button>
+
+                <button type="reset">Clear Form</button>
+
+            </p>
+
+        </form>
+
+        <p>
+
+            Already have a teacher account?
+
+            <a href="teacher-login.html">Login here</a>
+
+        </p>
+
+    </main>
+
+    <footer>
+
+        <hr>
+
+        <p>
+
+            &copy; 2026 TutorLink - Private Tutoring Management Platform
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

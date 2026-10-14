@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TutorLink | Teacher Profile</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>TutorLink</h1>
+
+        <p>Private Tutoring Management Platform</p>
+
+        <nav>
+
+            <a href="teacher-dashboard.html">Dashboard</a> |
+
+            <a href="find-students.html">Find Students</a> |
+
+            <a href="teacher-profile.html">My Profile</a> |
+
+            <a href="teacher-login.html">Log Out</a>
+
+        </nav>
+
+        <hr>
+
+    </header>
+
+    <main>
+
+        <h2>Teacher Profile</h2>
+
+        <p>View and update your personal and teaching information.</p>
+
+        <form action="teacher-profile.html" method="get">
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <p>
+
+                    <label for="fullname">Full Name:</label><br>
+
+                    <input type="text" id="fullname" name="fullname"
+
+                           value="Teacher Name" required>
+
+                </p>
+
+                <p>
+
+                    <label for="email">Email Address:</label><br>
+
+                    <input type="email" id="email" name="email"
+
+                           value="teacher@example.com" required>
+
+                </p>
+
+                <p>
+
+                    <label for="phone">Phone Number:</label><br>
+
+                    <input type="tel" id="phone" name="phone"
+
+                           placeholder="Enter your phone number" required>
+
+                </p>
+
+                <p>
+
+                    <label for="gender">Gender:</label><br>
+
+                    <select id="gender" name="gender">
+
+                        <option value="">Select Gender</option>
+
+                        <option value="male">Male</option>
+
+                        <option value="female">Female</option>
+
+                        <option value="other">Other</option>
+
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="address">Address:</label><br>
+
+                    <textarea id="address" name="address"
+
+                              rows="3" cols="35"
+
+                              placeholder="Enter your address"></textarea>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Teaching Information</legend>
+
+                <p>
+
+                    <label for="qualification">Highest Qualification:</label><br>
+
+                    <input type="text" id="qualification"
+
+                           name="qualification"
+
+                           placeholder="e.g. BSc in CSE" required>
+
+                </p>
+
+                <p>
+
+                    <label for="subjects">Subjects You Teach:</label><br>
+
+                    <input type="text" id="subjects" name="subjects"
+
+                           placeholder="e.g. Mathematics, Physics" required>
+
+                </p>
+
+                <p>
+
+                    <label for="experience">Teaching Experience:</label><br>
+
+                    <select id="experience" name="experience" required>
+
+                        <option value="">Select Experience</option>
+
+                        <option value="less-than-1">Less than 1 year</option>
+
+                        <option value="1-3">1–3 years</option>
+
+                        <option value="4-6">4–6 years</option>
+
+                        <option value="more-than-6">More than 6 years</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="tuition-type">Tuition Type:</label><br>
+
+                    <select id="tuition-type" name="tuition_type" required>
+
+                        <option value="">Select Tuition Type</option>
+
+                        <option value="online">Online</option>
+
+                        <option value="offline">In-person</option>
+
+                        <option value="both">Both Online and In-person</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="availability">Available Days and Times:</label><br>
+
+                    <textarea id="availability" name="availability"
+
+                              rows="3" cols="35"
+
+                              placeholder="e.g. Saturday to Thursday, 4 PM–8 PM"></textarea>
+
+                </p>
+
+                <p>
+
+                    <label for="salary">Expected Monthly Salary (BDT):</label><br>
+
+                    <input type="number" id="salary" name="salary"
+
+                           min="0" placeholder="Enter expected salary">
+
+                </p>
+
+                <p>
+
+                    <label for="bio">About Me:</label><br>
+
+                    <textarea id="bio" name="bio" rows="4" cols="35"
+
+                              placeholder="Describe your teaching skills and experience"></textarea>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Save Changes</button>
+
+            <button type="reset">Reset</button>
+
+        </form>
+
+        <p>
+
+            <a href="teacher-dashboard.html">Back to Dashboard</a>
+
+        </p>
+
+
+    </main>
+
+    <footer>
+
+        <hr>
+
+        <p>&copy; 2026 TutorLink - Teacher Portal</p>
+
+    </footer>
+
+</body>
+
+</html>

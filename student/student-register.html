@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorLink | Student Registration</title>
+</head>
+<body>
+  <header>
+    <h1>TutorLink</h1>
+    <p>Create a student account to find tutors and book sessions.</p>
+    <nav><a href="student-login.html">Login</a></nav>
+    <hr>
+  </header>
+
+  <main>
+    <h2>Student Registration</h2>
+    <form action="student-login.html" method="get">
+      <p><label for="fullname">Full name:</label><br><input type="text" id="fullname" name="fullname" required></p>
+      <p><label for="email">Email address:</label><br><input type="email" id="email" name="email" required></p>
+      <p><label for="password">Password:</label><br><input type="password" id="password" name="password" required></p>
+      <p><label for="confirm-password">Confirm password:</label><br><input type="password" id="confirm-password" name="confirm_password" required></p>
+      <p><label for="phone">Phone number:</label><br><input type="tel" id="phone" name="phone" required></p>
+      <p><label for="education">Education level:</label><br>
+        <select id="education" name="education" required>
+          <option value="">Select level</option><option value="school">School</option><option value="college">College</option><option value="university">University</option>
+        </select>
+      </p>
+      <p><label for="subjects">Subjects you need help with:</label><br><textarea id="subjects" name="subjects" rows="3" cols="35"></textarea></p>
+      <p><button type="submit">Create Student Account</button> <button type="reset">Clear</button></p>
+    </form>
+  </main>
+  <footer><hr><p>&copy; 2026 TutorLink</p></footer>
+</body>
+</html>
